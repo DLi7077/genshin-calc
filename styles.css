@@ -1,0 +1,311 @@
+@font-face {
+    font-family: genshinFont;
+    src: url(ja-jp.ttf);
+}
+body{
+    background-image:url(\images/element\ dark\ background.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+    width: auto;
+    font-family: genshinFont;
+}
+/* body{
+    background-image:    url(images/golembackground.jpg);
+    background-size:     cover;                
+    background-repeat:   no-repeat;
+    overflow: hidden;
+}*/
+.dividers{
+    /* font-size: 55px; */ /* Don't need this already specified font-size in .title */ 
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:white;
+}
+.title{
+    display: flex;
+    margin-left:11px;
+    font-size: 55px;
+    color:var(--c-cryo);
+    background-color: rgb(0, 0, 0,.5);
+    height:80px;
+
+    /* position: static;
+    display:inline; */
+    white-space: nowrap;
+    /* overflow: hidden; */
+    float:left;
+
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+label{
+    /* color:rgb(0, 255, 255); */
+    color:white;
+    font-size:16px;
+    background-color: rgba(0,0,0,.6);
+}
+select{
+    color:white;
+    font-size: 18px;
+    background-color: rgba(0,0,0,.8);
+    text-align: center;
+}
+option{
+    color:red;
+    font-family: genshinFont;
+    font-size:22px;
+}
+input{
+    color:rgb(255, 255, 255);
+    font-family: genshinFont;
+    font-size:18px;
+    background-color: rgba(0,0,0,0.5);
+    float:right;
+    width:80px;
+    
+
+}
+
+.subtitle{
+    font-size:23px;
+    text-align: center;
+    background-color: rgba(69, 69, 69, 0.75);
+    color: var(--c-cryo);
+    padding:5px;
+}
+.stats{
+    font-size:11px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width:280px;
+    padding:10px;
+    margin:5px;
+    position:absolute;
+    top:80px;
+    overflow:hidden;
+}
+.copyOver{
+    font-family: genshinFont;
+    font-size: 20px;
+    width:100px;
+    height:30px;
+    background-color:lightcoral;
+    border-radius: 12px;
+    border:3px solid rgb(0, 0, 0);
+}
+.character1{
+    /* background-image:url('images/Element_Pyro.png'); */
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-image: url('images/Element_Physical.png');
+    background-position: 45%;
+}
+.character2{
+    left:320px;
+    /* background-image:url('images/Element_Pyro.png'); */
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position: 45%;
+    background-image: url('images/Element_Physical.png');
+}
+
+.artifact{
+    left:630px;
+    width:290px;
+}
+.weapon{
+    left:950px;
+    width:290px;
+}
+.artipic{
+    vertical-align:top;
+    height:22px;
+}
+input.box{
+    transform:scale(2);
+    width:15px;
+    margin-right: 9%;
+    vertical-align: bottom;
+    position:relative;
+}
+
+.buff{
+    background-color:rgb(0, 0, 0,.5);
+    left: 1280px;
+    width:580px;
+    position: absolute;
+}
+
+.collapsible{
+    display: none;
+}
+.enemy{
+    top:680px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-repeat:no-repeat;
+    background-size:80%;
+    background-position-y: 60px;
+    background-position-x: 20px;
+    width:280px;
+    height:280px;
+}
+select{
+    float:right;
+    clear:right;
+    font-family: genshinFont;
+}
+.c{
+    position: fixed;
+    min-width: max-content; /* Has to be at least this width, constant */
+    top: 680px;
+    left: 320px;
+    /* 
+    this keeps div at position even after dimension change
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    background-color: black;
+    color:rgb(0, 225, 255);
+    min-height: 270px;
+    width:auto;
+
+}
+.uploadB {
+    background-color: rgba(179, 179, 179, 0.192);
+    color: rgb(0, 225, 255);
+    width: 270px;
+    padding:8px;
+    font-size: 15px;
+}
+.import{
+    background-color: #000000;
+    font-family: genshinFont;
+    color:white;
+}
+.header{
+    cursor:move;
+}
+.split{
+    float:left;
+    clear:none;
+    border-style: solid;
+    color:white;
+}
+.atk{/* for bennett and sara */
+    border-style:none;
+    padding:5px;
+    width:280px;
+}
+.bonus{
+    border-style:none;
+    padding:5px;
+    width:280px;
+}
+
+
+.consTitle{
+    text-align:center;
+    font-size: 20px;
+    color:white;
+}
+
+.separate{
+    float:left;
+}
+.output_log{
+    float:left;
+    font-size:20px;
+    white-space: pre-line;
+    white-space:  pre;
+    white-space: pre-wrap;
+    margin:4px;
+    /* allows new line \n */    
+}
+.console{
+    font-size:9px;
+    width:120px;
+    height:100px;
+}
+
+.cbuffs{/*for characters*/
+    display:none;
+    border-color:black 1px;
+    /* background-image: url('images/sucrose_BG.png'); */
+}
+.bg{
+    clear:left;
+    border-style: solid;
+    border-color: black;
+    display:block;
+    background-size:360px;
+    background-position-x:40%;
+    background-position-y:100%;
+    background-repeat: no-repeat;
+    height:280px;
+    
+}
+#showOnSelect{
+    display: none;
+}
+.sucrose{
+    border-color:chartreuse;
+    background-image: url('images/sucrose_gacha_splash.png');
+    background-position-x:30%;
+    background-position-y:70%;
+}
+.bennet{
+    
+    border-color: crimson;
+    background-image:url('images/bennett_gacha_splash.png');
+}
+.kazuha{
+    border-color: chartreuse;
+    background-image:url('images/kazuha_gacha_splash.png');
+    
+
+}
+.mona{
+    border-color:skyblue;
+    background-image: url('images/mona_gacha_splash.png');
+}
+.sara{
+    border-color: purple; 
+    background-image: url('images/sara_gacha_splash.png');
+    background-position-y:50%;
+}
+
+.ShenHe{
+    border-color: cyan; 
+    background-image: url('images/shenhe_gacha_splash.png');
+    background-position-x:70%;
+    background-position-y:50%;
+}
+:root{
+    --c-pyro:#fd9a00;
+    --c-cryo:#9bfdfe;
+    --c-hydro:#36cdff;
+    --c-electro:#dd9dfd;
+    --c-anemo:#00ffc3;
+    --c-geo:#ffca64;
+}
+.Pyro{
+    color:'#fd9a00';
+}
+.Cyro{
+    color:'#9bfdfe';
+}
+.Hydro{
+    color:'#36cdff';
+}
+.Electro{
+    color:'#dd9dfd';
+}
+.Anemo{
+    color:'#00ffc3';
+}
+.Geo{
+    color:'#ffca64';
+}
+
